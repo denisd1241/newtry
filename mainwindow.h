@@ -20,10 +20,11 @@ private slots:
     void on_genbutton_clicked();
     QVector<QVector<int>> genMatrix();
     void displayMatrix(const QVector<QVector<int>> &matrix);
-
+    QVector<QVector<int>> weightMatrix(const QVector<QVector<int>> &matrix);
 
 private:
     Ui::MainWindow *ui;
-      QVector<QVector<int>> matrix;
+    QVector<QVector<int>> matrix;
+    QVector<QVector<int>> weight;
 };
 #endif // MAINWINDOW_H
